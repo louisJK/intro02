@@ -1,0 +1,123 @@
+*{margin: 0; padding: 0;}
+body >*{
+    all: unset;
+}
+body{
+    height: 100vh;
+    background: #1c202d;
+    color: #edb872;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #edb872;
+}
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 60%;
+    padding-top: 150px;
+    z-index: 10;
+    text-align: center;
+}
+.wrap p{
+    padding: 10px 0;
+}
+.inviTit{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.3rem;
+    background: linear-gradient(to right, #f1ca97, #a48256 20%, #eab877 30%, #ffe4c0 50%, #a48256 60%, #f1ca97 80%);
+    background-size: 200% auto;
+    background-position: 0px 0px;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 5s linear infinite;
+    -moz-animation: shine 5s linear infinite;
+    animation: shine 5s linear infinite;
+}
+@keyframes shine {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+    background-position: 200% center;
+    }
+}
+.inviDate{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #edb872;
+    letter-spacing: 1px;
+}
+
+.kor_msg{
+    font-size: 1rem;
+    letter-spacing: 10px;
+}
+
+.wdacc01{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+.wdacc02{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.visitCard{
+    margin-top: 50px;
+}
+.visitCard a{
+    width: 100px;
+    font-size: .6rem;
+    text-align: center;
+    color: #edb872;
+    padding: 10px 10px;
+    border: 1px solid #edb872;
+    transition: .5s;
+    z-index: 15;
+}
+
+.visitCard a:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+
+@media (max-width: 640px){
+    .wrap{
+        width: 100%;
+    }
+    .inviTit{
+        font-size: 2.5rem;
+    }
+    .introTit{
+        font-size: 1rem;
+    }
+    .msg{
+        font-size: 2rem;
+    }
+    .kor_msg,.visitCard a{
+        font-size: .8rem;
+    }
+}
