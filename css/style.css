@@ -35,6 +35,7 @@ a{
     padding: 10px 0;
 }
 .inviTit{
+    overflow: hidden;
     font-family: 'Great Vibes', cursive;
     font-size: 2.3rem;
     background: linear-gradient(to right, #f1ca97, #a48256 20%, #eab877 30%, #ffe4c0 50%, #a48256 60%, #f1ca97 80%);
